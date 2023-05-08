@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h2>Pograma para calcular puntos de equipo de futbol </h2>
+  <ul>Necesitamos las siguientes variables:
+    <li>Victorias</li>
+    <li>Empates</li>
+  </ul>
+  <script>
+    //funcion para realizar saltos de linea
+    function SaltarLinea() {
+      document.write("<br><br>");
+    }
+    /*Pasar un parametro*/
+    function imprimir(frase) {
+      document.write(frase)
+      //lamamos a la funcion saltar linea
+      SaltarLinea();
+    }
+    //El parseInt transforma el texto a numero.
+    var victorias = parseInt(prompt("Informe la cantidad de victorias"));
+    var empates = parseInt(prompt("Informe la cantidad de empates"));
+    puntos_total = victorias * 3 + empates;
+    imprimir("El total de puntos del equipo es: " + puntos_total);
+
+    //vamos a trabajar con condicionales
+    if (puntos_total > 28) {
+      imprimir("El equipo esta mejor que el año pasado");
+    }
+    if (puntos_total < 28) {
+      imprimir("El equipo esta peor que el año pasado");
+    }
+    if (puntos_total == 28) {
+      imprimir("El equipo esta igual que el año pasado");
+    }
+
+
+  </script>
+
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

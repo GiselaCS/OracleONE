@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <h1>Indice de masa Corporal </h1>
+
+  <script>
+    //funcion para realizar saltos de linea
+    function SaltarLinea() {
+      document.write("<br><br>");
+    }
+    /*Pasar un parametro*/
+    function imprimir(frase) {
+      document.write(frase)
+      //lamamos a la funcion saltar linea
+      SaltarLinea();
+    }
+    //funcion para calcular el imc
+    function calcularimc(peso, altura, nombre) {
+      cimc = peso / (altura * altura);
+      //imprimir("El indice de masa corportal de " + nombre + " es: " + cimc);
+      return (cimc);
+    }
+    //calcularimc(54, 1.65, "Gisela");
+    //calcularimc(58, 1.60, "Claudia");
+
+    //Personalizar con usuario
+    nombre = prompt("informe su nombre: ")
+    pesoinformado = prompt(nombre + " informe su peso: ");
+    alturainformado = prompt(nombre + " informe su altura:");
+    imcalculado = calcularimc(pesoinformado, alturainformado)
+    imprimir(nombre + " el imc es: " + imcalculado)
+
+  </script>
+
+
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

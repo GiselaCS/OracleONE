@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  Mi primer programa html
+  <ul>Etiquetas
+    <li>H1 al h5 para titulos, entre mas bajo el numero mas grande la letra</li>
+    <li>con la etiqueta a href se crean links <a href="https://www.google.com/?hl=es">link</a></li>
+  </ul>
+  <script>
+
+
+    document.write("la edad de gisela es" + "<br>")
+    document.write(22 + "<br>")
+    alert("esto es programar")
+    document.write(12 + " años" + "<br>");
+    document.write(10 + 20 + "<br>");
+    document.write("la suma de las edades de Juan, Pedro y Carlos es...");
+    document.write("<br>");
+    document.write((20 + 25 + 15));
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Juan nació en el año...");
+    document.write("<br>");
+    document.write(2020 - 20);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Pedro nació en el año...");
+    document.write("<br>");
+    document.write(2020 - 25);
+    document.write("<br>");
+    document.write("<br>");
+    document.write("Carlos nació en el año...");
+    document.write("<br>");
+    document.write(2020 - 15);
+
+    var anho = 2023;
+    document.write("Gisela tiene " + (anho - 2000) + " años" + "<br>");
+    var nom1 = "Gisela";
+    var nom2 = "Canela";
+    var nom3 = "Sebas";
+    promedio = ((20 + 25 + 15) / 3);
+    document.write("la edad promedio de : " + nom1 + ", " + nom2 + ", " + nom3 + " es: " + Math.round(promedio));
+
+
+    /*Hacer una funcion para salto de linea*/
+    function SaltarLinea() {
+      document.write("<br><br>");
+    }
+    SaltarLinea();
+    document.write("sigue un salto de linea");
+    SaltarLinea();
+    document.write("asi se hace");
+    SaltarLinea();
+    /*Pasar un parametro*/
+    function imprimir(frase) {
+      document.write(frase)
+      //lamamos a la funcion saltar linea
+      SaltarLinea();
+    }
+    imprimir("hola")
+    imprimir("¿Como estas?")
+   
+  </script>
+
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>

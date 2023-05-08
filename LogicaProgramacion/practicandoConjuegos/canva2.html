@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+  
+<body>
+  <h3>Crear un tablero canvas</h3>
+  <canvas width="600" height="400">
+    
+  </canvas>
+  <script>
+    //funcion para dibujar cuadrados
+    function dibujarCuadrados(x,y,color){
+        let pantalla = document.querySelector("canvas");
+        let pincel = pantalla.getContext("2d");
+        //dar el color al tablero
+        pincel.fillStyle = color;
+        pincel.fillRect(x,y,50,50);
+        //borde negro
+        pincel.strokeStyle ="black";
+        pincel.strokeRect(x,y,50,50)
+
+    }
+    //dibujarCuadrados();
+    let x =0;
+    /*while(x<600){
+        dibujarCuadrados(x,0,"yellow");
+        dibujarCuadrados(x,50,"blue");
+        dibujarCuadrados(x,100,"red");
+        x = x+50;
+        //break;
+    }*/
+    
+    //forma de hacerlo con for
+    for(x=0;x<600; x= x+50){
+        dibujarCuadrados(x,0,"green");
+        dibujarCuadrados(x,50,"blue");
+        dibujarCuadrados(x,100,"red");
+    }
+   
+
+  
+    
+  </script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
